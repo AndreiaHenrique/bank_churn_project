@@ -20,8 +20,8 @@ bank_churn_project/
 │── 01_EDA.ipynb
 │── 02_Prediction.ipynb
 │── 03_Classification.ipynb
+|──LICENSE
 |──README.md
-|──LICENSE.md
 ```
 
 ## Quick start
