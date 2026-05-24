@@ -64,18 +64,6 @@ jupyter lab
 | EstimatedSalary | Estimated annual salary |
 | **Exited** | Target — 1 if the customer churned |
 
-## Key results
-
-* **Classification** — XGBoost / LightGBM reach a 5-fold cross-validated
-  ROC-AUC ≈ 0.87 with engineered features. Threshold tuning lifts F1
-  (class 1) from ~0.55 to ~0.63.
-* **Regression** — `EstimatedSalary` is essentially noise w.r.t. the other
-  features (R² ≈ 0). This finding itself is useful: the variable can be
-  dropped without harming downstream models.
-* **EDA insights** — strongest churn drivers are `Age` (45–60 bracket),
-  `Geography = Germany`, `NumOfProducts ≥ 3`, `IsActiveMember = 0` and
-  `Gender = Female`.
-
 ## Reproducibility
 
 * `random_state = 42` everywhere.
